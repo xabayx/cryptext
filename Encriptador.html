@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <title>CRYPTEXT</title>
+  </head>
+
+  <body>
+    <header>
+
+      <img src="imagenes/Logo.png" alt="" />
+
+      <h1> | CRYPTEXT</h1>
+    </header>
+    
+
+    <main>
+      <div class="container">
+        <div class="campoEncriptar">
+          <form onsubmit="return false">
+            <textarea
+              id="campoTexto"
+              pattern="^[a-z ]*$"
+              placeholder="Ingresa tu texto aquí"
+              title="solo se permiten caracteres entre a-z en minúscula"
+            ></textarea><br /><br />
+          </form>
+          
+          <div class="parteBaja">
+            <div class="indicacion">
+              <img src="imagenes/exclamation_pic.png"/>
+              <p>Solo letras minúsculas y sin carácteres especiales.</p>
+            </div>
+            <button id="botonEncriptar">Encriptar</button>
+            <button id="botonDesencriptar">desencriptar</button>
+          </div>
+        </div>
+
+        <div class="campoTextoEncriptado">
+          <div class="muneco">
+            <img class="" src="imagenes/Muneco.png" alt="" />
+            <div class="text">
+              <h2>Ningún mensaje fue encontrado</h2>
+              <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+          </div>
+
+          <button class="botonCopiar" onclick="copiarEncriptadoFunc()">
+            Copiar!
+          </button>
+          <textarea class="printEncriptado"></textarea>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="social-icons">
+        <a href="https://github.com/xabayx">
+          <img
+            src="./imagenes/github_logo.png"
+            alt="GitHub logo"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/abaymarin/">
+          <img
+            src="./imagenes/in_logo.png"
+            alt="LinkedIn logo"
+          />
+        </a>
+      </div>
+      <p class="made-with">Made with ❤️ by Abay - <span id="current-year"></span></p>
+    </footer>
+
+    <script>
+      document
+        .querySelector("#campoTexto")
+        .addEventListener("keydown", function (event) {
+          if (event.key === "Enter") {
+            document.querySelector("#botonEncriptar").click();
+          }
+        });
+
+      const campoTexto = document.getElementById("campoTexto");
+      campoTexto.focus(); //poner cursor en el campo de texto al cargar la página
+      const botonEncriptar = document.getElementById("botonEncriptar");
+
+      const vocales = ["a", "e", "i", "o", "u"];
+      const vocalesReemplazadas = ["ai", "enter", "imes", "ober", "ufat"];
+      let inputUser;
+
+
+      function aparecerYDesaparecer() {
+        // Esconder imagen para dejar espacio libre para imprimir texto encriptado
+        const muneco = document.querySelector(".muneco");
+        muneco.style.display = "none";
+
+        const printEncriptado = document.querySelector(".printEncriptado");
+        printEncriptado.style.display = "block";
+        // Hacer aparecer boton copiar que está en css como display:none;
+        const botonCopiar = document.querySelector(".botonCopiar");
+        botonCopiar.style.display = "block";
+      }
+
+
+      //Encriptamos el input
+      function encriptar() {
+        inputUser = campoTexto.value.toLowerCase().split("");
+        console.log(inputUser);
+        for (let i = 0; i < inputUser.length; i++) {
+          for (let j = 0; j < vocales.length; j++) {
+            if (inputUser[i] === vocales[j]) {
+              inputUser[i] = vocalesReemplazadas[j];
+              break;
+            }
+          }
+        }
+        console.log(inputUser);
+        let encriptado = inputUser.join("");
+        console.log(encriptado);
+        return encriptado;
+      }
+      let miarray;
+
+      botonEncriptar.onclick = function () {
+        const inputValue = campoTexto.value;
+        const pattern = /^[a-z ]*$/;
+        if (pattern.test(inputValue)) {
+          const miarray = encriptar();
+          aparecerYDesaparecer();
+          //imprimimos el texto encriptado en el documento html
+          let p = document.querySelector(".printEncriptado");
+          p.innerHTML = encriptar();
+        } else {
+          alert("Ingresar solo caracteres a-z en minúscula y espacios");
+        }
+      };
+
+      //Desencriptamos el input
+      function desencriptar() {
+        inputUser = campoTexto.value;
+        console.log(inputUser);
+        let resultado = inputUser;
+        for (let i = 0; i < vocalesReemplazadas.length; i++) {
+          resultado = resultado.replace(
+            new RegExp(vocalesReemplazadas[i], "g"),
+            vocales[i]
+          );
+        }
+        console.log(resultado);
+        return resultado;
+      }
+      let miarray2;
+      botonDesencriptar.onclick = function () {
+        const inputValue = campoTexto.value;
+        const pattern = /^[a-z ]*$/;
+        if (pattern.test(inputValue)) {
+          const miarray2 = desencriptar();
+          aparecerYDesaparecer();
+          let p = document.querySelector(".printEncriptado");
+          p.innerHTML = desencriptar();
+        } else {
+          alert("ingresar solo caracteres a-z y espacios");
+        }
+      };
+
+      //boton copiar texto
+      function copiarEncriptadoFunc() {
+        const { textContent } = document.querySelector(".printEncriptado");
+        navigator.clipboard.writeText(textContent);
+        console.log("Texto copiado: " + textContent);
+      }
+
+
+      document.getElementById("current-year").innerHTML =
+        new Date().getFullYear();
+
+      document.querySelector("img").addEventListener("click", () => {
+        location.reload();
+      });
+    </script>
+  </body>
+</html>
