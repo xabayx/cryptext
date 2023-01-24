@@ -35,7 +35,7 @@ Las llaves de encriptación solicitadas son las siguientes:
 - La letra "o" es convertida a "ober"
 - La letra "u" es convertida a "ufat"
 
-✔️ Validación
+✔️ Validación\
 [![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
 
 Contacto
