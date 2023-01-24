@@ -38,5 +38,7 @@ Las llaves de encriptación solicitadas son las siguientes:
 ## ✔️ I used:
 [![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
 
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'J3J5I4AOK');kofiwidget2.draw();</script> 
+
 Contacto
 linkedin - https://www.linkedin.com/in/abaymarin/
