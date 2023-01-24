@@ -36,11 +36,11 @@ Las llaves de encriptación solicitadas son las siguientes:
 - La letra "u" es convertida a "ufat"
 
 ## ✔️ I used:
-[![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)\
+[![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
 
 ## 💖 Support the Project
 Thank you so much already for using my projects! If you want to go a step further and support my open source work, buy me a coffee:
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J5I4AOK)
 
-Contacto
+* Contacto\
 linkedin - https://www.linkedin.com/in/abaymarin/
