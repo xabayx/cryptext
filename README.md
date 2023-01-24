@@ -8,7 +8,7 @@ El reto consiste en crear una página web que cifre y descifre el texto que ser�
 - CSS3
 - JavaScript
 
-##✔️ Requisitos del desafío
+✔️ Requisitos del desafío
 
 - Debe funcionar solo con letras minúsculas
 - No deben ser utilizados letras con acentos ni caracteres especiales
