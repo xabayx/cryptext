@@ -4,14 +4,18 @@ El reto consiste en crear una página web que cifre y descifre el texto que ser�
 👉[Mira el proyecto aquí](https://xabayx.github.io/cryptext/)👈
 
 🔧 Construido con
-HTML5
-CSS3
-JavaScript
+- HTML5
+- CSS3
+- JavaScript
 
-✔️ Requisitos del desafío
-Debe funcionar solo con letras minúsculas
-No deben ser utilizados letras con acentos ni caracteres especiales
-Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
+##✔️ Requisitos del desafío
+
+- Debe funcionar solo con letras minúsculas
+- No deben ser utilizados letras con acentos ni caracteres especiales
+- Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
+
+
+
 Por ejemplo:
 
 "buenas tardes" => "bufatenternais tairdenters"
@@ -26,10 +30,10 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 Las llaves de encriptación solicitadas son las siguientes:
 
 *La letra "a" es convertida a "ai".
-La letra "e" es convertida a "enter".
-La letra "i" es convertida a "imes".
-La letra "o" es convertida a "ober"
-La letra "u" es convertida a "ufat"
+*La letra "e" es convertida a "enter".
+*La letra "i" es convertida a "imes".
+*La letra "o" es convertida a "ober"
+*La letra "u" es convertida a "ufat"
 
 ✔️ Validación
 
