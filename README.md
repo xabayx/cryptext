@@ -39,7 +39,7 @@ Las llaves de encriptación solicitadas son las siguientes:
 [![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
 
 ## 💖 Support the Project
-Thank you so much already for using my projects! If you want to go a step further and support my open source work, buy me a coffee:
+Thank you so much already for using my projects! If you want to go a step further and support my open source work, buy me a coffee:\
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J5I4AOK)
 
 * Contacto\
