@@ -16,16 +16,16 @@ El reto consiste en crear una página web que cifre y descifre el texto que ser�
 
 
 
-Por ejemplo:
+> Por ejemplo:
 
-"buenas tardes" => "bufatenternais tairdenters"
+> "buenas tardes" => "bufatenternais tairdenters"
 
-bufatenternais tairdenters" => "buenas tardes"
+> bufatenternais tairdenters" => "buenas tardes"
 
-> La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
-El resultado debe ser mostrado en la pantalla._
-Extras:
-Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+* La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
+* El resultado debe ser mostrado en la pantalla.
+### Extras:
+* Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
 🔑 Llaves de encriptación
 Las llaves de encriptación solicitadas son las siguientes:
 
@@ -38,5 +38,5 @@ Las llaves de encriptación solicitadas son las siguientes:
 ✔️ Validación
 
 
-Contact
+Contacto
 linkedin - https://www.linkedin.com/in/abaymarin/
