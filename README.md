@@ -36,7 +36,7 @@ Las llaves de encriptación solicitadas son las siguientes:
 - La letra "u" es convertida a "ufat"
 
 ✔️ Validación
-
+[![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
 
 Contacto
 linkedin - https://www.linkedin.com/in/abaymarin/
